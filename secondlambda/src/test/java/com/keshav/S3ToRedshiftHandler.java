@@ -48,6 +48,8 @@ public class S3ToRedshiftHandler implements RequestHandler<S3Event, String> {
             System.out.println("execute Query");
             statement.close();
             conn.close();
+            System.out.println("========Hello========");
+
 
             return "Successfully loaded CSV data from S3 to Redshift";
         } catch (SQLException e) {
